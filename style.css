@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --inputF:rgba(240, 240, 240, 0.721);
+    --fundo3:rgba(255, 255, 255, 0.132);
+    --fundo1: #ffffff08;
+     --fundo2: #ebebeb;
+    --text-cor: #1a1a1a;
+    --header-bg: #dadada;
+    --card-bg: #f0f0f0;
+    --border-color: #6a6464;
+    --menu-bg: #ffffff;
+    --menu-text: #1a1a1a;
+    --btn-cor: rgb(17, 0, 253);
+    --border-tt:rgba(20, 20, 20, 0.301);
+    --sombra:rgba(0, 0, 0, 0.25);
+}
+
+/* Tema escuro */
+.dark-mode {
+    --inputF:rgba(2, 2, 2, 0.596);
+     --fundo3:rgba(255, 255, 255, 0.386);
+    --fundo1: #000000;
+     --fundo2: #1b1b1b;
+    --text-cor: #ffffff;
+    --header-bg: #1a1a1a;
+    --card-bg: #1a1a1a;
+    --border-color: #333333;
+    --menu-bg: #1a1a1a;
+    --menu-text: #e5e5e5;
+}
+
+
+header{
+    width: 100%;
+    background-color: var(--header-bg);
+    display: flex;
+   
+    align-items: center;
+    padding: 10px 0px;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#conteudo-principal{
+   background-color: var(--fundo2);
+   
+   padding: 30px;
+    
+  
+   
+   
+}
+#conteudo-principal >h2{
+    color: var(--text-cor);
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#tecnologias{
+
+height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   column-gap: 150px;
+   row-gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+.tec{
+    width: calc(50%-10px);
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid var(--border-tt);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    background-color: var(--fundo3);
+    box-shadow: inset 0 2px 6px var(--sombra);
+
+
+}
+.tec h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--text-cor);
+    
+}
+.tec p{
+    font-family: monospace;
+    text-align: justify;
+}
+
+#tema{
+     background-color: var(--btn-cor);
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    width: 100px;
+}
+#tema:hover{
+
+    background-color: var(--btn-hover-cor, #555);
+    color: #fff; 
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+.logo-texto{
+   margin: 0;
+   color: aqua;
+}
+.menu li{
+    display: inline-block;
+  margin: 0;
+         
+    
+}
+.pg-inicial {
+    height: 92vh;
+    background-color: var(--fundo1);
+    text-align: center;
+    padding: 100px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.pg-inicial > h1, p{
+    padding: 50px 0px;
+    color: var(--text-cor);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pg-inicial>a{
+    padding: 10px;
+    color: rgb(227, 227, 227);
+    text-decoration: none;
+    background-color: rgb(38, 38, 192);
+    border-radius: 25px;
+    display: inline-flexbox;
+    text-align: center;
+    border: 1px solid black;
+    width: 240px;
+    margin: auto;
+}
+.pg-inicial>a:hover{
+    background-color: blue;
+    color: white;
+}
+    
+#galeria{
+height: 60vh;
+color: var(--text-cor);
+background-color: var(--fundo1);
+}
+
+.menu ul{
+    margin-left: 600px;
+    
+}
+
+.menu li a{
+    
+    font-size: larger;
+     text-align: center;
+    text-decoration: none;
+    color: var(--text-cor);
+    text-transform: uppercase;
+    padding: 15px;
+    
+     width: 100%;
+
+}
+
+
+.job {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: flex-start;
+    width: 100%;
+}
+.jobs {
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.jobs img {
+   
+    max-width: 100%;
+    
+    height: auto;
+  
+}
+#contato{
+    background-color: var(--fundo2);
+    padding: 20px;
+}
+
+
+
+form{
+ 
+ margin-bottom: auto;
+    background-color: var(--fundo1);
+    width: 730px;
+    text-align: center;
+    height: 60vh;
+    color: var(--text-cor);
+    border-radius: 25px;
+    padding: 15px;
+    border: 2px solid var(--border-color);
+     box-shadow: inset 0 2px 6px var(--sombra);
+
+    
+}
+
+.form-grupo input{
+    width: 100%;
+    padding: 5px;
+    background-color: var(--inputF);
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    color: var(--text-cor);
+    
+}
+.form-grupo label{
+    font-family: Arial, Helvetica, sans-serif;
+    pad: 5px;
+    
+     color: var(--text-cor);
+}
+.btn{
+    padding: 10px;
+
+}
+#contato >ul{
+    list-style: none; 
+    padding: 0;
+    margin: 25px 0;
+    max-width: 420px;
+    font-family: Arial, sans-serif;
+   
+}
+#contato a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px
+}
+#contato li{
+    box-shadow: inset 0 2px 6px var(--sombra);
+
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+#contato{
+      display: flex;
+    gap: 30px;        /* espaço entre form e ul */
+    align-items: stretch;
+}
+#contato>h2{
+    color: var(--text-cor);
+    text-align: center;
+    padding: 10px;
+}
+
+.form-grupo textarea{
+    width: 100%;
+    padding: 20px;
+      background-color: var(--inputF);
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+     color: var(--text-cor);
+}
+
+
+#video{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-cor);
+    background-color: var(--fundo1);
+    height: 80vh;
+}
+   .form-grupo{
+    padding: 5px;
+   }
+
+.zoom {
+     transform: scale(1.1); transition: .5s;
+}
+#topo{
+    background-color: var(--btn-cor);
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    width: 100px;
+}
+  #topo:hover{
+    background-color: var(--btn-hover-cor, #555); /* cor diferente ao passar o mouse */
+    color: #fff; /* muda a cor do texto */
+    transform: scale(1.05); /* aumenta levemente */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* sombra sutil */
+  }
