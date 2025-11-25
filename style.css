@@ -38,11 +38,11 @@
 
 
 header{
-    width: 100%;
+  
     background-color: var(--header-bg);
     display: flex;
+   flex-direction: column;
    
-    align-items: center;
     padding: 10px 0px;
 }
 h3{
@@ -68,25 +68,26 @@ h3{
 
 #tecnologias{
 
-height: 100vh;
+
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
     justify-content: space-between;
-   column-gap: 150px;
-   row-gap: 30px;
-    max-width: 1100px;
-    margin: auto;
+   
+   
+   
+  
 }
 .tec{
-    width: calc(50%-10px);
+   
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid var(--border-tt);
     border-radius: 25px;
-    display: flex;
-    flex-direction: column;
+   
+   
     align-items: center;
-    width: 240px;
+   
     background-color: var(--fundo3);
     box-shadow: inset 0 2px 6px var(--sombra);
 
@@ -105,7 +106,7 @@ height: 100vh;
 
 #tema{
      background-color: var(--btn-cor);
-    padding: 10px;
+    padding: 6px 12px;
     border: 1px solid var(--border-color);
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
@@ -121,30 +122,38 @@ height: 100vh;
 
 .container-logo{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .logo-texto{
    margin: 0;
    color: aqua;
 }
-.menu li{
-    display: inline-block;
-  margin: 0;
-         
+.menu ul{
+   
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    
     
 }
+
 .pg-inicial {
     height: 92vh;
     background-color: var(--fundo1);
     text-align: center;
     padding: 100px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
+    
+  
     
 }
-.pg-inicial > h1, p{
-    padding: 50px 0px;
+.pg-inicial > h1,p{
+    
+    font-size: 22px;
+    margin-bottom: 10px;
     color: var(--text-cor);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -152,13 +161,13 @@ height: 100vh;
     padding: 10px;
     color: rgb(227, 227, 227);
     text-decoration: none;
-    background-color: rgb(38, 38, 192);
+    background-color: blue;
     border-radius: 25px;
-    display: inline-flexbox;
+    display: inline-block;
     text-align: center;
     border: 1px solid black;
     width: 240px;
-    margin: auto;
+    
 }
 .pg-inicial>a:hover{
     background-color: blue;
@@ -172,8 +181,10 @@ background-color: var(--fundo1);
 }
 
 .menu ul{
-    margin-left: 600px;
-    
+   list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
 }
 
 .menu li a{
@@ -201,8 +212,11 @@ background-color: var(--fundo1);
 .jobs {
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid rgb(0, 0, 0);
+   
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
 h2{
@@ -212,8 +226,8 @@ h2{
 
 .jobs img {
    
-    max-width: 100%;
-    
+    max-width: 320%;
+    width: 100%;
     height: auto;
   
 }
@@ -226,9 +240,160 @@ h2{
 
 form{
  
+
+    background-color: var(--fundo1);
+    
+    text-align: center;
+    height: 140vh;
+    color: var(--text-cor);
+    border-radius: 25px;
+    padding: 15px;
+    border: 2px solid var(--border-color);
+     box-shadow: inset 0 2px 6px var(--sombra);
+
+    
+}
+
+.form-grupo input, textarea{
+    
+    padding: 5px;
+    background-color: var(--inputF);
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    color: var(--text-cor);
+    
+}
+
+.btn{
+    padding: 10px;
+
+}
+#contato >ul{
+    margin-top: 100px;
+    list-style: none; 
+    padding: 0;
+ 
+    
+    font-family: Arial, sans-serif;
+   
+}
+#contato a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px
+}
+#contato li{
+    box-shadow: inset 0 2px 6px var(--sombra);
+
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 12px 16px;
+   
+    border-radius: 8px;
+    
+   
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+#contato{
+      
+    gap: 30px;        /* espaço entre form e ul */
+    
+}
+#contato>h2{
+    color: var(--text-cor);
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+#video{
+    padding: 20px;
+    text-align: center;
+    
+    color: var(--text-cor);
+    background-color: var(--fundo1);
+}
+iframe{
+    width: 100%;
+    height: 200px;
+   
+    border-radius: 8px;
+}
+   .form-grupo{
+    padding: 5px;
+   }
+
+.zoom {
+     transform: scale(1.1); transition: .5s;
+}
+#topo{
+    background-color: var(--btn-cor);
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    width: 100px;
+}
+  #topo:hover{
+    background-color: var(--btn-hover-cor, #555); /* cor diferente ao passar o mouse */
+    color: #fff; /* muda a cor do texto */
+    transform: scale(1.05); /* aumenta levemente */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* sombra sutil */
+  }
+  
+@media(min-width: 600px){
+ 
+    .menu ul{
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+#tecnologias{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tec{
+    width: 30%;
+}
+.job{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+}
+
+@media (min-width:900px){
+
+header{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#tecnologias .tec{
+    width: 30%;
+}
+.pg-inicial >h1,p{
+    padding: 50px 0px;
+}
+
+
+.job .jobs img{
+    max-width: 280px;
+}
+iframe{
+    height: 350px;
+}
+
+form{
+ 
  margin-bottom: auto;
     background-color: var(--fundo1);
-    width: 730px;
+    width: 73%;
     text-align: center;
     height: 60vh;
     color: var(--text-cor);
@@ -281,6 +446,7 @@ form{
     margin-bottom: 12px;
     border-radius: 8px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between; 
     align-items: center;
     font-size: 17px;
@@ -290,7 +456,7 @@ form{
 #contato{
       display: flex;
     gap: 30px;        /* espaço entre form e ul */
-    align-items: stretch;
+    
 }
 #contato>h2{
     color: var(--text-cor);
@@ -300,39 +466,11 @@ form{
 
 .form-grupo textarea{
     width: 100%;
-    padding: 20px;
-      background-color: var(--inputF);
-    border-radius: 5px;
-    border: 2px solid var(--border-color);
+   
+  
      color: var(--text-cor);
 }
 
 
-#video{
-    display: flex;
-    flex-direction: column;
-    color: var(--text-cor);
-    background-color: var(--fundo1);
-    height: 80vh;
-}
-   .form-grupo{
-    padding: 5px;
-   }
 
-.zoom {
-     transform: scale(1.1); transition: .5s;
-}
-#topo{
-    background-color: var(--btn-cor);
-    padding: 10px;
-    border: 1px solid var(--border-color);
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
-    width: 100px;
-}
-  #topo:hover{
-    background-color: var(--btn-hover-cor, #555); /* cor diferente ao passar o mouse */
-    color: #fff; /* muda a cor do texto */
-    transform: scale(1.05); /* aumenta levemente */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* sombra sutil */
-  }
+ }

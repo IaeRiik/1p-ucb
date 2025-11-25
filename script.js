@@ -6,9 +6,9 @@ const form = document.querySelector("#form");
 form.addEventListener('submit',(e)=>{
 let enviarForm = true;
     if(!nome.value  || !numero.value || !msg.value){
-        alert("ALGUM CAMPO ESTA VAZIO")
+        alert("CAMPO VAZIO! TROCARA MENSAGEM")
     }else{
-        alert("ENVIADO COM SUCESSO!")
+        alert("DEU CERTP! TROCA A PORRA DA MENSAGEM")
         renderizar()
     }
 
